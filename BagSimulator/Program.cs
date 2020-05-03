@@ -1,13 +1,7 @@
-﻿using System;
-using System.Linq; 
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
-
+﻿// Copyright 2020, Shawn Hernan
+using System;
 namespace BagSimulator
 {
-
-    
     class Program
     {
         static void Main(string[] args)
