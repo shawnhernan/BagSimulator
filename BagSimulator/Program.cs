@@ -1,13 +1,7 @@
-﻿using System;
-using System.Linq; 
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
-
+﻿// Copyright 2020, Shawn Hernan
+using System;
 namespace BagSimulator
 {
-
-    
     class Program
     {
         static void Main(string[] args)
@@ -34,7 +28,8 @@ namespace BagSimulator
                 //create some bags, and shake them up 
                 Bag0 = new Bag(2, 0); Bag1 = new Bag(0, 2); Bag2 = new Bag(1, 1); 
                 Bags[0] = Bag0; Bags[1] = Bag1; Bags[2] = Bag2;
-                Bag0.Shake(); Bag1.Shake(); Bag2.Shake();
+                // Bag0.Shake(); Bag1.Shake(); // no point in shaking these 
+                Bag2.Shake();
 
                 //choose a bag at random
                 randomBag = rnd.Next(0, Bags.Length);
